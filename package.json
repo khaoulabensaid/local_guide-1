@@ -37,6 +37,7 @@
     "react-bootstrap": "^1.2.2",
     "react-dev": "0.0.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scroll": "^1.8.0",
     "style-loader": "^1.2.1"
   }
