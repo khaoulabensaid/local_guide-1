@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 class Info extends React.Component {
     constructor(props){
@@ -11,6 +12,15 @@ class Info extends React.Component {
                 <img src="https://www.kindpng.com/picc/m/495-4952535_create-di
                 gital-profile-icon-blue-user-profile-icon.png" alt="" style = {{ width: "200px", height:"200px"}}>
                 </img>
+
+                <form  encType="multipart/form-data">
+            <div> 
+                <label>Select your profile picture:</label> <input type="file"   name="image" />
+            </div>
+            <div> 
+                <input type="submit" name="btn_upload_profile_pic" value="Upload"  onClick = {axios.post("/upload")}/> 
+            </div>
+            </form>
               
                 <h2> Full name: </h2>
                 <h2> Location: </h2>
