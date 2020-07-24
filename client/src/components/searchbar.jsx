@@ -50,8 +50,6 @@ class Search extends React.Component {
     });
   }
 
-  
-
   render() {
     if (!this.state.typingButton) {
       return (
@@ -74,7 +72,7 @@ class Search extends React.Component {
             >
               <option defaultValue>Cities</option>
               <option value="Beja">Beja</option>
-              <option value="Bizerte">Bizete</option>
+              <option value="Bizerte">Bizerte</option>
               <option value="Gabes">Gabes</option>
               <option value="Gafsa">Gafsa</option>
               <option value="Jendouba">Jendouba</option>
