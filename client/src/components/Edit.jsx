@@ -7,22 +7,25 @@ class Edit extends React.Component {
 
   render() {
     return (
-      <div class="container">
+
+      <div className="container">
         <form>
-          <label for="name">Full Name</label>
+          <label htmlFor="name">Full Name</label>
           <input type="text" id="name" placeholder="Full Name" />
-          <label for="age">Age</label>
+          <label htmlFor="age">Age</label>
           <input type="text" id="age" placeholder="Age" />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="email" id="email" placeholder="Email Address" />
-          <label for="phone">Phone Number</label>
+          <label htmlFor="phone">Phone Number</label>
           <input type="text" id="phone" placeholder="Phone number" />
-          <label for="gender">Gender</label>
+          <label htmlFor="gender">Gender</label>
+
           <select id="gender">
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
-          <label for="Language">Language</label>
+
+          <label htmlFor="Language">Language</label>
           <select data-placeholder="Choose a Language...">
             <option value="Arabic">Arabic</option>
             <option value="Chinese">Chinese</option>
@@ -35,6 +38,7 @@ class Edit extends React.Component {
             <option value="Spanish">Spanish</option>
           </select>
           <input type="submit" value="Submit" />
+
         </form>
       </div>
     );

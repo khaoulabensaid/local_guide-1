@@ -5,12 +5,36 @@ import Login from "./login.jsx";
 import Signup from "./signup.jsx";
 import $ from "jquery";
 import "./home.css";
+import Edit from "../Edit.jsx";
+import Search from "../searchbar.jsx";
 
 export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       display: "none",
+    };
+  }
+  handleSearch() {
+    $("#home").css("filter", "blur(8px)");
+    $("#home").css("-webkit-filter", "blur(8px)");
+    $("#aa10").css("display", "block");
+    var span = $(".close3")[0];
+    span.onclick = () => {
+      $("#aa10").css("display", "none");
+      $("#home").css("filter", "");
+      $("#home").css("-webkit-filter", "");
+    };
+  }
+  handleClick() {
+    $("#home").css("filter", "blur(8px)");
+    $("#home").css("-webkit-filter", "blur(8px)");
+    $("#aa7").css("display", "block");
+    var span = $(".close1")[0];
+    span.onclick = () => {
+      $("#aa7").css("display", "none");
+      $("#home").css("filter", "");
+      $("#home").css("-webkit-filter", "");
     };
   }
   changeDisplayLogin() {
@@ -73,9 +97,15 @@ export class Home extends Component {
                     <Nav.Link onClick={this.logoutForm.bind(this)}>
                       Sign Up
                     </Nav.Link>
+                    <Nav.Link onClick={this.handleSearch.bind(this)}>
+                      Search
+                    </Nav.Link>
                   </Nav>
-                  <button style={{ display: this.state.display }}>
-                    My account
+                  <button
+                    style={{ display: this.state.display }}
+                    onClick={this.handleClick.bind(this)}
+                  >
+                    Create Ad
                   </button>
                 </Navbar.Collapse>
               </Navbar>
@@ -260,6 +290,22 @@ export class Home extends Component {
             <div className="aa6">
               <span className="close">&times;</span>
               <Signup changeDisplay={this.changeDisplaySignup.bind(this)} />
+            </div>
+          </div>
+        </div>
+        <div id="create">
+          <div id="aa7" className="aa8">
+            <div className="aa9">
+              <span className="close1">&times;</span>
+              <Edit />
+            </div>
+          </div>
+        </div>
+        <div id="search">
+          <div id="aa10" className="aa11">
+            <div className="aa12">
+              <span className="close3">&times;</span>
+              <Search />
             </div>
           </div>
         </div>
