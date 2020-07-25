@@ -1,0 +1,51 @@
+#searchBar {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 150px;
+  left: 400px;
+}
+
+#selected {
+  color: red;
+}
+#brand {
+  position: absolute;
+
+  top: 95px;
+  left: 370px;
+}
+
+#buttonFind {
+  position: absolute;
+
+  top: 290px;
+  left: 400px;
+  border-radius: 25%;
+}
+
+img {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  width: 100px;
+  height: 100px;
+}
+
+#Profile {
+  text-align: center;
+  height: 300px;
+  width: 290px;
+  border-radius: 5%;
+  border-color: bisque;
+  border-bottom-color: bisque;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}

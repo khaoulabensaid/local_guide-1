@@ -50,23 +50,6 @@ class Search extends React.Component {
     });
   }
 
-  // filterBy() {
-
-  //   var _idOne = this.state.selectCity;
-  //   var _idTwo = this.state.selectLang;
-  //   var _idThree = this.state.selectGender;
-  //   let dataFilter = this.state.dataBase.filter((ele) => {
-  //     return (
-  //       ele.city === _idOne &&
-  //       ele.languages.includes(_idTwo) &&
-  //       ele.gender === _idThree
-  //     );
-  //   });
-  //   this.setState({
-  //     newData:dataFilter,
-  //   })
-  // }
-
   render() {
     if (!this.state.typingButton) {
       return (
@@ -89,7 +72,7 @@ class Search extends React.Component {
             >
               <option defaultValue>Cities</option>
               <option value="Beja">Beja</option>
-              <option value="Bizerte">Bizete</option>
+              <option value="Bizerte">Bizerte</option>
               <option value="Gabes">Gabes</option>
               <option value="Gafsa">Gafsa</option>
               <option value="Jendouba">Jendouba</option>
