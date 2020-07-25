@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, Form, Button, FormControl} from 'react-bootstrap';
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
-import Login from './homepage/login.jsx';
-import Signup from './homepage/signup.jsx';
+import Login from './login.jsx';
+import Signup from './signup.jsx';
 import $ from "jquery";
 import './home.css';
 
