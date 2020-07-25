@@ -1,35 +1,26 @@
-
-import React, { Component} from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import GuidePage from "./components/guidePage.jsx"
-import Search from "./components/searchbar.jsx"
-import Signup from './components/homepage/signup.jsx';
-import 'bootstrap-css-only/css/bootstrap.min.css'; 
-import 'mdbreact/dist/css/mdb.css';
-import NavBar from './components/navbar.jsx';
-import Login from './components/homepage/login.jsx'
-
-class App extends React.Component {
-
+import Signup from "./components/homepage/signup.jsx";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import Login from "./components/homepage/login.jsx";
+import Home from "./components/homepage/home.jsx";
+import { BrowserRouter } from "react-router-dom";
+class App extends Component {
   constructor(props) {
     super(props);
-   
   }
   render() {
-    return (<div>
-      <NavBar fixed="top" />
-     <Signup />
-     <Login />
-        <GuidePage /> 
-        <Search/>
-    </div>)
+    return (
+      <div>
+        <Home />
+      </div>
+    );
   }
-
-
- 
-
-
-
 }
-
-ReactDOM.render(<App/>,document.getElementById('app'))
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("app")
+);

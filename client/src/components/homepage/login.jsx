@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
 import Axios from "axios";
+
 export default class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +36,7 @@ export default class Login extends React.Component {
         console.log(err);
       });
     e.preventDefault();
+    this.props.changeDisplay();
   }
 
   render() {
